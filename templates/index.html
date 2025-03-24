@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moje Notatki</title>
+</head>
+<body>
+    <h1>Lista Notatek</h1>
+    <ul>
+        {% for note in notes %}
+            <li>{{ note }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/add">Dodaj nową notatkę</a>
+</body>
+</html>
